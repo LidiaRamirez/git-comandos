@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Comandos | Git</title>
+	<link rel="icon" href="icon/git.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>GIT</h1>
+			<p>Para utilizar git se debe descargar desde su pagina oficial: <a href="https://git-scm.com/">https://git-scm.com/</a></p>
+			<p>Pero antes de comenzar a utilizar GIT, se recomienda saber comandos para el uso de la terminal</p>
+		</header>
+		<section class="section-terminal">
+			<h2>Comandos en terminal en windows</h2>
+			<article>
+				<p>• Navegar por carpetas</p>
+				<code>cd nombre-archivo</code>
+			</article>
+			<article>
+				<p>• Salir de carpeta</p>
+				<code>cd ..</code>
+			</article>
+			<article>
+				<p>• Crear carpetas</p>
+				<code>mkdir nombre-carpeta</code>
+			</article>
+			<article>
+				<p>• Visualizar carpetas y archivos</p>
+				<code>ls</code>
+			</article>
+			<article>
+				<p>• Limpiar consola, que en realidad al hacer scroll el contenido sigue allí</p>
+				<code>clear</code>
+			</article>
+			<article>
+				<p>• Crear archivos</p>
+				<code>touch nombre-archivo.extension</code>
+			</article>
+			<article>
+				<p>• Borrar archivos</p>
+				<code>rm nombre-archivo.extension</code>
+			</article>
+			<article>
+				<p>• Borrar carpeta</p>
+				<code>rm -rf nombre-carpeta</code>
+			</article>
+			<article>
+				<p>• Editar archivo </p>
+				<code>vim nombre-archivo.extension</code>
+			</article>
+			<article>
+				<p>• Escribir, Guardar (w) y cerrar archivo (q) editado, dar esc</p>
+				<code>:wq</code>
+			</article>
+			<article>
+				<p>• Para salir de editar archivo </p>
+				<code>:q!</code>
+			</article>
+		</section>
+		<section class="section-git">
+			<h2>Comandos relevantes de git</h2>
+			<article>
+				<h3>Versión de Git</h3>
+				<code>git version</code> ó
+				<code>git --version</code>					
+			</article>
+			<article>
+				<h3>Configuración global</h3>
+				<code>git config --global user.email correo@hotmail.com</code>
+				<br>
+				<code>git config --global user.name nombre</code>
+				<br>
+				<code>git config --global user.name "nombre usuario"</code>
+			</article>
+			<article>
+				<h3>Crear repositorio Git <span class="text-muted">(Paso 1)</span></h3>
+				<code>git init</code>
+				<p>Inicialmente esta en working directory</p>
+			</article>
+			<article>
+				<h3>Estado del repositorio</h3>				
+				<code>git status</code>
+			</article>
+			<article>
+				<h3>Agregar archivos a stage <span class="text-muted">(Paso 2)</span></h3>
+				<p>Agregar un archivo específico</p>
+				<code>git add nombre-archivo.extension</code>
+				<p>Agregar todos los archivos</p>
+				<code>git add .</code>
+			</article>
+			<article>
+				<h3>Eliminar de stage</h3>
+				<code>git rm --cached nombre-archivo.extension</code>
+				<p>Forzar un remove definitivamente</p>
+				<code>git rm -f index.css</code>
+			</article>
+			<article>
+				<h3>Confirmar cambios <span class="text-muted">(Paso 3)</span></h3>
+				<code>git commit -m "mensaje descriptivo"</code>
+				<figure><img src="img/commit.jpg" alt=""></figure>
+				<p>Si queremos agregar un archivo a un último commit</p>
+				<code>git add archivo-olvidado.extension</code>
+				<code>git commit --amend</code>
+				<p>Si queremos agregar un archivo y reemplazar último mensaje</p>
+				<code>git add archivo-olvidado.extension</code>
+				<code>git commit --amend 'Nuevo mensaje'</code>
+				<p>* Aparece el editor, solo colocar <code>:wq!</code> para salir</p>
+			</article>
+			<article>
+				<h3>Subir cambios a un repositorio remoto <span class="text-muted">(Paso 4)</span></h3>
+				<code>git push origin nombre-rama</code>
+				<br>
+				<code>git push origin master</code>
+			</article>
+			<article>
+				<h3>Actualizar las referencias remotas</h3>
+				<code>git pull origin nombre-rama</code>
+			</article>
+			<article>
+				<h3>Etiquetas para GIT</h3>
+				<p>Para el ultimo commit, con anotación</p>
+				<code>git tag -a version0.5 -m 'version estable del proyecto'</code>
+				<p>Para visualizar todos los tag</p>
+				<code>git tag -l</code>
+			</article>
+			<article>
+				<h3>Traer todas las ramas remotas a local</h3>
+				<code>git fetch origin</code>
+			</article>
+			<article>
+				<h3>Visualizar todas las ramas</h3>
+				<code>git branch</code>
+				<code>git branch -a</code>
+			</article>
+			<article>
+				<h3>Pasos para publicar página en github</h3>
+				<code>git checkout -b gh-pages</code>
+				<br>
+				<code>git pull origin master</code>
+				<br>
+				<code>git push origin gh-pages</code>
+			</article>
+		</section>
+		<section class="section-terminal">
+			<p>* Una opción de consola personalizada es hyper, se puede descargar desde su pagina oficial: <a href="https://hyper.is/">https://hyper.is/</a></p>
+			<p>Mi configuración personalizada: <a target="_blank" href="https://github.com/LidiaRamirez/comandos-git/blob/master/configuracion-hyper.txt">link</a></p>
+		</section>
+	</div>
+</body>
+</html>

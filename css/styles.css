@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeee;
+  color: #4e443c;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  max-width: 85%;
+  padding: 20px 50px;
+  background: #fff;
+}
+
+section {
+  padding: 0 10px;
+}
+
+code {
+  display: inline-block;
+  background: #516353;
+  padding: 5px;
+  color: #fff;
+  margin: 4px 0 12px;  
+}
+
+.section-terminal code {
+  margin: 4px 10px 12px;  
+}
+
+h1, h2 {
+  margin: 10px 0;
+  color: #f64d27;
+}
+
+h3 {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-git article {
+  margin: 10px;
+}
+
+.text-muted {
+  font-size: 14px; 
+  color: #6c757d;
+}
+
+.section-terminal {
+  font-size: 14px;
+}
