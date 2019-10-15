@@ -29,11 +29,7 @@ code {
   background: #516353;
   padding: 5px;
   color: #fff;
-  margin: 4px 0 12px;  
-}
-
-.section-terminal code {
-  margin: 4px 10px 12px;  
+  margin: 4px 10px 12px; 
 }
 
 h1, h2 {
@@ -49,8 +45,17 @@ img {
   max-width: 100%;
 }
 
+.section-git p {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.section-git img {
+  margin-left: 10px;
+}
+
 .section-git article {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .text-muted {
@@ -58,6 +63,25 @@ img {
   color: #6c757d;
 }
 
-.section-terminal {
+.section-additional {
   font-size: 14px;
+  margin-top: 20px;
+}
+
+.section-additional h4 {
+  color: #f64d27;
+  display: inline-block;
+  border-bottom: 1px solid #f64d27;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.section-additional p {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 20px;
+  }
 }
