@@ -22,7 +22,7 @@
 	<div class="container">
 		<header>
 			<h1>GIT</h1>
-			<p>Para utilizar git en windows se debe descargar desde su pagina oficial: <a href="https://git-scm.com/">https://git-scm.com/</a>. En el caso de otros sistemas operativos se puede guiar de este <a href="https://git-scm.com/book/es/v1/Empezando-Instalando-Git">link</a>.</p>			
+			<p>Para utilizar git en windows se debe descargar desde su página oficial: <a href="https://git-scm.com/">https://git-scm.com/</a>. En el caso de otros sistemas operativos se puede guiar de este <a href="https://git-scm.com/book/es/v1/Empezando-Instalando-Git">link</a>.</p>			
 			<p>Pero antes de comenzar a utilizar GIT, se recomienda saber comandos para el uso de la terminal</p>
 		</header>
 		<section class="section-terminal">
@@ -136,6 +136,14 @@
 				<code>git tag -l</code>
 			</article>
 			<article>
+				<h3>Conectar con repositorio remoto</h3>
+				<code>git remote add origin url-repositorio</code>
+			</article>
+			<article>
+				<h3>• Visualizar la URL asociada a repositorio remoto</h3>
+				<code>git remote -v</code>
+			</article>
+			<article>
 				<h3>• Subir cambios a un repositorio remoto <span class="text-muted">(Paso 4)</span></h3>
 				<code>git push origin nombre-rama</code>
 				<br>
@@ -156,6 +164,10 @@
 			<article>
 				<h3>• Cambiar de una rama a otra</h3>
 				<code>git checkout nombre-rama</code>
+			</article>
+			<article>
+				<h3>• Deshacer cambios de un archivo</h3>
+				<code>git checkout nombre-archivo.extension</code>
 			</article>
 			<article>
 				<h3>• Borrar una rama</h3>
@@ -186,7 +198,7 @@
 		</section>
 		<section class="section-additional">
 			<h4>Adicionales</h4>
-			<p>* Una opción de consola personalizada es hyper, se puede descargar desde su pagina oficial: <a href="https://hyper.is/">https://hyper.is/</a>. Mi configuración personalizada de hyper: <a target="_blank" href="https://github.com/LidiaRamirez/git-comandos/blob/master/configuracion-hyper.txt">link</a></p>
+			<p>* Una opción de consola personalizada es hyper, se puede descargar desde su página oficial: <a href="https://hyper.is/">https://hyper.is/</a>. Mi configuración personalizada de hyper: <a target="_blank" href="https://github.com/LidiaRamirez/git-comandos/blob/master/configuracion-hyper.txt">link</a></p>
 			<p>* Un video muy recomendado para entender Git: <a href="https://www.youtube.com/watch?v=jGehuhFhtnE">link</a></p>
 			<p>* Una guía muy recomendada y muy detallada de comandos Git: <a href="https://joaquinaraujo.github.io/git-github/">link</a></p>
 			<p>* Convención de commits y ejemplos: <a href="https://gist.github.com/LidiaRamirez/c67b898e61292e1198419d1dfdbf0b84">Link</a> </p>			
