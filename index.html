@@ -71,6 +71,17 @@
 				<p>• Para salir de editar archivo </p>
 				<code>:q!</code>
 			</article>
+			<article>
+				<p>• Generar llave pública</p>
+				<p class="tab">Si es primera vez, se debe crear carpeta .ssh en carpeta de usuario del sistema operativo</p>
+				<code>mkdir .ssh</code>
+				<p class="tab">Luego ubicarse en carpeta .ssh</p>
+				<code>cd .ssh</code>
+				<p class="tab">Y el comando para generar llave pública:</p>
+				<code>ssh-keygen -t rsa</code> ó <code>ssh-keygen.exe</code>
+				<br>
+
+			</article>
 		</section>
 		<!-- <section>
 			<h2>Flujo de trabajo de Git</h2>
@@ -187,6 +198,11 @@
 				<code>git branch -a</code>
 			</article>
 			<article>
+				<h3>Fusionar ramas</h3>
+				<p>Para ello hay que ubicarse en la rama que queremos dar merge para traer cambios (si hubieran) de otra rama</p>
+				<code>git merge otra-rama</code>
+			</article>
+			<article>
 				<h3>• Comandos para publicar página en Github</h3>
 				<code>git checkout -b gh-pages</code>
 				<br>
@@ -202,6 +218,7 @@
 			<p>* Un video muy recomendado para entender Git: <a href="https://www.youtube.com/watch?v=jGehuhFhtnE">link</a></p>
 			<p>* Una guía muy recomendada y muy detallada de comandos Git: <a href="https://joaquinaraujo.github.io/git-github/">link</a></p>
 			<p>* Convención de commits y ejemplos: <a href="https://gist.github.com/LidiaRamirez/c67b898e61292e1198419d1dfdbf0b84">Link</a> </p>			
+			<p>* Programas para tener una interfaz gráfica para usar git: <a href="https://www.gitkraken.com">GitKraken</a> y <a href="https://www.sourcetreeapp.com/">Sourcetree</a></p>
 		</section>
 	</div>
 </body>
