@@ -186,7 +186,15 @@
 			</article>
 			<article>
 				<h3>• Borrar una rama</h3>
-				<code>git branch -d nombre-rama</code>
+				<code>git branch -D nombre-rama</code>
+			</article>
+			<article>
+				<h3>• Cambiar de rama, pero sin confirmar cambios realizados hasta entonces</h3>
+				<code>git stash</code>
+			</article>
+			<article>
+				<h3>• Aplicar cambios de un guardado y lo retira inmediatamente de la pila.</h3>
+				<code>git stash pop</code>
 			</article>
 			<article>
 				<h3>• Clonar un repositorio</h3>
@@ -202,7 +210,7 @@
 				<code>git branch -a</code>
 			</article>
 			<article>
-				<h3>Fusionar ramas</h3>
+				<h3>• Fusionar ramas</h3>
 				<p>Para ello hay que ubicarse en la rama que queremos dar merge para traer cambios (si hubieran) de otra rama</p>
 				<code>git merge otra-rama</code>
 			</article>
