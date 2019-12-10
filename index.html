@@ -82,13 +82,10 @@
 				<br>
 			</article>
 			<article>
-				<p>• Abrir visual code desde consola</p>
+				<p>• Extra: Abrir editor visual code desde terminal</p>
 				<code>code .</code>
 			</article>
 		</section>
-		<!-- <section>
-			<h2>Flujo de trabajo de Git</h2>
-		</section> -->
 		<section class="section-git">
 			<h2>Comandos relevantes de git</h2>			
 			<article>
@@ -101,6 +98,10 @@
 				<code>git config --global user.email correo@mail.com</code>				
 				<br>
 				<code>git config --global user.name "nombre usuario"</code>
+			</article>
+			<article>
+				<h3>• Mostrar información de configuración</h3>
+				<code>git config --list</code>
 			</article>
 			<article>
 				<h3>• Crear repositorio Git <span class="text-muted">(Paso 1)</span></h3>
@@ -189,7 +190,15 @@
 			</article>
 			<article>
 				<h3>• Borrar una rama</h3>
-				<code>git branch -d nombre-rama</code>
+				<code>git branch -D nombre-rama</code>
+			</article>
+			<article>
+				<h3>• Cambiar de rama, pero sin confirmar cambios realizados hasta entonces</h3>
+				<code>git stash</code>
+			</article>
+			<article>
+				<h3>• Aplicar cambios de un guardado y lo retira inmediatamente de la pila.</h3>
+				<code>git stash pop</code>
 			</article>
 			<article>
 				<h3>• Clonar un repositorio</h3>
@@ -205,7 +214,7 @@
 				<code>git branch -a</code>
 			</article>
 			<article>
-				<h3>Fusionar ramas</h3>
+				<h3>• Fusionar ramas</h3>
 				<p>Para ello hay que ubicarse en la rama que queremos dar merge para traer cambios (si hubieran) de otra rama</p>
 				<code>git merge otra-rama</code>
 			</article>
