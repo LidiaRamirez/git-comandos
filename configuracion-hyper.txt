@@ -113,7 +113,7 @@ module.exports = {
     copyOnSelect: true,
 
     //set working directory
-    workingDirectory: 'D:\\carpeta',
+    workingDirectory: 'unidad:\\carpeta',
     // if `true` (without backticks and without quotes), hyper will be set as the default protocol client for SSH
     defaultSSHApp: true,
 
