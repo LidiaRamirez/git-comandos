@@ -76,9 +76,20 @@ img {
   font-size: 18px;
 }
 
-.section-additional p {
-  margin-bottom: 5px;
+.section-additional p { margin-bottom: 5px; }
+
+.section-about-me {
+  width: 200px;
 }
+
+.about-me-name { 
+  border-top: 1px dashed #516353;
+  padding-top: 5px;
+  color: #f64d27; 
+  margin-top: 20px;
+}
+
+.about-me-specialty { font-size: 12px}
 
 .tab {
   font-size: 14px;;
